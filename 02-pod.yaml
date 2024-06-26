@@ -5,5 +5,5 @@ metadata:
 spec:
   - name: nginx
     image: nginx
-    ports: 
-    - containerport: 80
+    # ports: 
+    # - containerport: 80
