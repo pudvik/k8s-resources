@@ -1,0 +1,14 @@
+kind: Pod
+apiVersion: v1
+metada:
+  name: enviroment
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: course
+      value: 'k8s'
+    - name: duration
+      value: '120hr'
+   
