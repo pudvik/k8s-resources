@@ -20,7 +20,7 @@ template:
       tier: frontend
       extra-key: extra-value
   spec:
-    container:
+    containers:
     - name: nginx
       image: nginx
 
