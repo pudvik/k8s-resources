@@ -13,11 +13,12 @@ spec:
       name: nginx
       tier: frontend
 
-template:
-  metadata:
-    labels:
-      name: nginx
-      tier: frontend
+  template:
+    metadata:
+
+      labels:
+        name: nginx
+        tier: frontend
       
   spec:
     containers:
