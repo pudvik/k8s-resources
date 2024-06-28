@@ -22,6 +22,6 @@ spec:
         app: nginx
         project: nginx
     spec:
-      conatiners:
+      containers:
       - name: nginx
-        containers: nginx
+        image: nginx
