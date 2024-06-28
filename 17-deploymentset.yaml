@@ -18,7 +18,7 @@ template:
     labels:
       name: nginx
       tier: frontend
-      extra-key: extra-value
+      
   spec:
     containers:
     - name: nginx
