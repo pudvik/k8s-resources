@@ -12,7 +12,7 @@ spec:
     matchLabels: 
       tier: frontend
       app: nginx
-      name: nginx
+      
 
   # below is pod definition
   template:
