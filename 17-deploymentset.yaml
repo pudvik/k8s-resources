@@ -20,9 +20,9 @@ spec:
         name: nginx
         tier: frontend
       
-  spec:
-    containers:
-    - name: nginx
-      image: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
 
 
