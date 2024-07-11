@@ -1,5 +1,5 @@
-kind: ConfigMap
 apiVersion: v1
+kind: ConfigMap
 metadata:
   name: filebeat
 data:
@@ -34,19 +34,17 @@ spec:
   - name: filebeat
     image: docker.elastic.co/beats/filebeat:7.5.0
     volumeMounts:
-    - name: nginx-logs
-      mountPath: /var/log/nginx/
     - name: filebeat-config
       mountPath: /usr/share/filebeat/filebeat.yml
       subPath: filebeat.yml
+    - name: nginx-logs
+      mountPath: /var/log/nginx/
   volumes:
   - name: nginx-logs
     emptyDir: {}
-  - name: filebeat.config
+  - name: filebeat-config
     configMap:
       name: filebeat
       items:
         - key: filebeat.yml
           path: filebeat.yml
-
-
